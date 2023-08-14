@@ -1,0 +1,98 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+
+    overflow: hidden;
+}
+
+.ocean {
+    height: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background: #015871; */
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    width: 6400px;
+    height: 198px;
+    -webkit-animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    animation-delay: -3.5s;
+}
+
+.oceanTop .wave{
+    -webkit-animation: wave-reverse 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    animation: wave-reverse 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    
+}
+
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes wave-reverse {
+    0% {
+        margin-left: -1600px;
+    }
+
+    100%{
+        margin-left: 0px;
+    }
+
+    
+    /* 100% {
+        margin-left: -1600px;
+    } */
+}
+
+
+.oceanTop {
+    top: 0%;
+    transform: rotate(180deg);
+}
+
+.chakra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.chakraInner {
+    height: 200px;
+    width: 200px;
+    border: 10px solid navy;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+
+.stroke {
+    background: navy;
+    position: absolute;
+    width: 2px;
+    height: 50%;
+    background-color: navy;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+}
+
+
+/* ========== */
