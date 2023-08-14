@@ -14,6 +14,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    
     /* background: #015871; */
 }
 
@@ -28,11 +29,13 @@ body {
     animation-delay: -3.5s;
 }
 
-.oceanTop .wave{
+.oceanTop .wave {
     -webkit-animation: wave-reverse 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
     animation: wave-reverse 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
-    
+
 }
+
+
 
 
 @keyframes wave {
@@ -50,11 +53,11 @@ body {
         margin-left: -1600px;
     }
 
-    100%{
+    100% {
         margin-left: 0px;
     }
 
-    
+
     /* 100% {
         margin-left: -1600px;
     } */
@@ -79,8 +82,19 @@ body {
     border: 10px solid navy;
     border-radius: 50%;
     position: relative;
+    animation: rotate 10s linear infinite;
 }
 
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 .stroke {
